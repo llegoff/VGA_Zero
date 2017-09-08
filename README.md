@@ -15,3 +15,10 @@ and https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-
 
 Copy vga565.dtbo in /boot/overlays/
 and copy content of config-example.txt in /boot/config.txt
+
+
+
+- rev1
+  bad vga footprint, hole too small
+- rev2
+  comming soon
