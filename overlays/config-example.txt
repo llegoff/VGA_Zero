@@ -1,0 +1,35 @@
+# Enable audio (loads snd_bcm2835)
+dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
+dtparam=audio=on
+
+# disable i2c, pin use by h-sync & v-sync
+dtparam=i2c_arm=off
+
+#information https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md 
+#load /boot/overlays/vga565.dtbo
+dtoverlay=vga565
+dpi_output_format=0x13
+enable_dpi_lcd=1
+display_default_lcd=1
+
+dpi_group=2
+#uncoment one dpi_mode line
+#640x480 60hz
+#dpi_mode=4
+#800x600 60hz
+#dpi_mode=9
+#1024x768 60hz
+dpi_mode=16
+#1280x960 60hz
+#dpi_mode=32
+#1280x1024 60hz
+#dpi_mode=35
+#1440x900 60hz
+#dpi_mode=47
+#1600x1200 60hz
+#dpi_mode=51
+#1680x1050 60hz
+#dpi_mode=58
+#1920x1080 60hz
+#dpi_mode=82
+
