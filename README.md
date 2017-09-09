@@ -18,7 +18,8 @@ and copy content of config-example.txt in /boot/config.txt
 
 
 
-- rev1
-  bad vga footprint, hole too small
-- rev2
-  comming soon
+rev1
+- bad vga footprint, hole too small
+rev2
+- change vga footprint
+- move j3 & j5
