@@ -17,8 +17,8 @@ et https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-z
 ![pcb](img/3D.PNG)
 
 
-Copier ![vga565.dtbo](overlays/vga565.dtbo) dans le répertoire /boot/overlays/
-et copier le contenu du fichier ![config-example.txt](overlays/config-example.txt) dans le fichier /boot/config.txt
+Copier ![vga565.dtbo](overlays/vga565.dtbo?raw=true) dans le répertoire /boot/overlays/
+et copier le contenu du fichier ![config-example.txt](overlays/config-example.txt?raw=true) dans le fichier /boot/config.txt
 
 
 
