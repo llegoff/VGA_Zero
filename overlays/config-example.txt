@@ -20,10 +20,20 @@ dpi_group=2
 #dpi_mode=9
 #1024x768 60hz
 dpi_mode=16
+#1280x768 60hz
+#dpi_mode=23
+#1280x800 60hz
+#dpi_mode=28
 #1280x960 60hz
 #dpi_mode=32
 #1280x1024 60hz
 #dpi_mode=35
+#1360x768 60hz
+#dpi_mode=39
+#1366x768 60hz
+#dpi_mode=81
+#1400x1050 60hz
+#dpi_mode=42
 #1440x900 60hz
 #dpi_mode=47
 #1600x1200 60hz
@@ -32,4 +42,8 @@ dpi_mode=16
 #dpi_mode=58
 #1920x1080 60hz
 #dpi_mode=82
+#1920x1200 60hz
+#dpi_mode=69
+#1920x1440 60hz
+#dpi_mode=73
 
