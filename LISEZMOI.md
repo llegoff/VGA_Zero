@@ -26,5 +26,5 @@ rev1
 - Mauvaise empreinte vga, trous trop petit
 
 rev2
-- changement le l'emprinte vga
+- changement le l'empreinte vga
 - déplacement de j3 & j5
