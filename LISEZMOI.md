@@ -3,6 +3,8 @@
 # VGA_Zero
 interface VGA pour Raspberry Pi Zéro &amp; 2,3,B+
 
+achetez sur ebay: https://www.ebay.fr/itm/153295944438
+
 ![](img/VgaZero.jpg)
 
 Ce montage utilise le mode 3 dpi, et genere le son à partir des broches gpio 18 & 19
