@@ -45,9 +45,9 @@ here is the code of the file:
     };
 
 ### Audio Interface
-and use audio from pin gpio 18 & 19
+audio from pin gpio 18 & 19
 
-and https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
+see https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
 ### SPI Interface
 GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS redirection to gpio 26 & 27
