@@ -14,6 +14,36 @@ Ce montage utilise le mode 3 dpi,
 
 voir https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md
 
+seules les bits nécessaires du dpi sont redirigées sur le port GPIO 40 broches, avec le fichier [vga565.dtbo](overlays/vga565.dtbo?raw=true) chargé au démarrage 
+
+voici le code du fichier:
+
+    /dts-v1/;
+    /plugin/;
+    /{
+    	compatible = "brcm,bcm2708";
+    	// There is no VGA driver module, but we need a platform device
+    	// node (that doesn't already use pinctrl) to hang the pinctrl
+    	// reference on - leds will do
+    	fragment@0 {
+    		target = <&leds>;
+    		__overlay__ {
+    			pinctrl-names = "default";
+    			pinctrl-0 = <&vga565_pins>;
+    		};
+	    };
+    	fragment@1 {
+    		target = <&gpio>;
+    		__overlay__ {
+    			vga565_pins: vga565_pins {
+        			brcm,pins = <2 3 4 5 6 7 8 12 13 14 15 16 17 20 21 22 23 24>;
+    				brcm,function = <6>; /* alt2 */
+				    brcm,pull = <0>; /* no pull */
+			    };
+		    };
+	    };
+    };
+
 ### Interface audio
 et genere le son à partir des broches gpio 18 & 19
 et https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
@@ -25,10 +55,9 @@ les GPIO 9 , 10, 11 , 25, 26, 27 peuvent etre utilisé pour le bus SPI , avec l'
     dtparam=spi=on
     dtoverlay=spi0-cs,cs0_pin=26,cs1_pin=27
     
-## Schéma
+## Schéma & Circuit Imprimé
 ![sch](img/sch.PNG)
 
-## Circuit Imprimé
 ![pcb](img/3D.PNG)
 
 ## Installation
