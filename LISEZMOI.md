@@ -45,8 +45,9 @@ voici le code du fichier:
     };
 
 ### Interface audio
-et genere le son à partir des broches gpio 18 & 19
-et https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
+le son est généré à partir des broches gpio 18 & 19
+
+voir https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
 ### Interface SPI
 les GPIO 9 , 10, 11 , 25, 26, 27 peuvent etre utilisé pour le bus SPI , avec l'overlay spi0-cs, et une redirection des CS vers les gpio 26 & 27
