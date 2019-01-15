@@ -17,6 +17,12 @@ and use audio from pin gpio 18 & 19
 
 and https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
+GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS redirection to gpio 26 & 27
+
+    # uncomment to use spi0 with cs0 & cs1 retirected on pin 26 & 27 
+    dtparam=spi=on
+    dtoverlay=spi0-cs,cs0_pin=26,cs1_pin=27
+
 ![sch](img/sch.PNG)
 
 
