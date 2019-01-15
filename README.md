@@ -26,10 +26,11 @@ GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS 
     dtparam=spi=on
     dtoverlay=spi0-cs,cs0_pin=26,cs1_pin=27
 
-## Schematic
+## Schematic & PCB
+Schematic and PCB are made with Kicad software
+
 ![sch](img/sch.PNG)
 
-## PCB
 ![pcb](img/3D.PNG)
 
 ## Installation
