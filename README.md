@@ -14,7 +14,7 @@ this pcb use the dpi mode 3
 
 see https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md
 
-only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with the [vga565.dtbo]((overlays/vga565.dtbo?raw=true) file loaded at startup
+only the necessary bits of the dpi are redirected to the 40-pin GPIO port, with the [vga565.dtbo](overlays/vga565.dtbo?raw=true) file loaded at startup
 
 here is the code of the file:
 
