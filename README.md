@@ -29,7 +29,7 @@ GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS 
 ## PCB
 ![pcb](img/3D.PNG)
 
-
+##Installation
 Copy ![vga565.dtbo](overlays/vga565.dtbo?raw=true) in /boot/overlays/
 and copy content of ![config-example.txt](overlays/config-example.txt?raw=true) in /boot/config.txt
 
