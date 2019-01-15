@@ -9,7 +9,11 @@ bye on ebay : https://www.ebay.fr/itm/153295944438
 
 this pcb use the dpi mode 3 and use audio from pin gpio 18 & 19
 
+![](img/dpi-packing.png)
+
 see https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md
+
+and use audio from pin gpio 18 & 19
 
 and https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
