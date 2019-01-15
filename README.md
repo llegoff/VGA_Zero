@@ -23,10 +23,10 @@ GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS 
     dtparam=spi=on
     dtoverlay=spi0-cs,cs0_pin=26,cs1_pin=27
 
-## Schema
+## Schematic
 ![sch](img/sch.PNG)
 
-
+## PCB
 ![pcb](img/3D.PNG)
 
 
@@ -34,7 +34,7 @@ Copy ![vga565.dtbo](overlays/vga565.dtbo?raw=true) in /boot/overlays/
 and copy content of ![config-example.txt](overlays/config-example.txt?raw=true) in /boot/config.txt
 
 
-
+## Révision
 rev1
 - bad vga footprint, hole too small
 
