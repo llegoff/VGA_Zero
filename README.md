@@ -8,7 +8,7 @@ bye on [ebay](http://rover.ebay.com/rover/1/709-53476-19255-0/1?icep_ff3=2&pub=5
 ![](img/VgaZero.jpg)
 
 ### DPI (Display parallel Interface)
-this pcb use the dpi mode 3
+Like [VGA666](https://github.com/fenlogic/vga666), this pcb uses dpi interface (in mode 3 to free gpio 18 & 19)
 
 ![](img/dpi-packing.png)
 
@@ -45,7 +45,7 @@ here is the code of the file:
     };
 
 ### Audio Interface
-audio from pin gpio 18 & 19
+audio interface is connected to gpio 18 & 19 (PWM)
 
 see https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
@@ -67,8 +67,8 @@ GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS 
 ![pcb](img/3D.PNG)
 
 ## Installation
-Copy [vga565.dtbo](overlays/vga565.dtbo?raw=true) in /boot/overlays/
-and copy content of [config-example.txt](overlays/config-example.txt?raw=true) in /boot/config.txt
+Copy [vga565.dtbo](overlays/vga565.dtbo?raw=true) to /boot/overlays/
+and copy content of [config-example.txt](overlays/config-example.txt?raw=true) to /boot/config.txt
 
 
 ## Révision
