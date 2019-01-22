@@ -3,7 +3,8 @@
 # VGA_Zero
 VGA interface for Raspberry Pi Zéro &amp; 2,3,B+
 
-buy on [ebay](http://rover.ebay.com/rover/1/709-53476-19255-0/1?icep_ff3=2&pub=5575378759&campid=5338273189&customid=&icep_item=153295944438&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg&toolid=11111)
+buy on ![logoebay](http://rover.ebay.com/rover/1/709-53476-19255-0/1?icep_ff3=2&pub=5575378759&campid=5338273189&customid=&icep_item=153295944438&ipn=psmain&icep_vectorid=229480&kwid=902099&mtid=824&kw=lg&toolid=11111)
+[logoebay]: https://ir.ebaystatic.com/rs/v/fxxj3ttftm5ltcqnto1o4baovyl.png
 
 ![](img/VgaZero.jpg)
 
