@@ -71,7 +71,7 @@ voici le code du fichier:
     #---> 1920x1440 60hz  dpi_mode=73
 
 ### Interface audio
-le son est généré à partir des broches gpio 18 & 19
+le son est généré en MLI (PWM) à partir des broches gpio 18 & 19
 
 voir https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
