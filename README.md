@@ -44,11 +44,40 @@ here is the code of the file:
 	    };
     };
 
+
+/boot/config.txt
+    dtoverlay=vga565
+    dpi_output_format=0x13
+    enable_dpi_lcd=1
+    display_default_lcd=1
+    dpi_group=2
+    dpi_mode=16
+    #---------------- dpi_mode line ---------------------
+    #---> 640x480 60hz    dpi_mode=4
+    #---> 800x600 60hz    dpi_mode=9
+    #---> 1024x768 60hz   dpi_mode=16
+    #---> 1280x768 60hz   dpi_mode=23
+    #---> 1280x800 60hz   dpi_mode=28
+    #---> 1280x960 60hz   dpi_mode=32
+    #---> 1280x1024 60hz  dpi_mode=35
+    #---> 1360x768 60hz   dpi_mode=39
+    #---> 1366x768 60hz   dpi_mode=81
+    #---> 1400x1050 60hz  dpi_mode=42
+    #---> 1440x900 60hz   dpi_mode=47
+    #---> 1600x1200 60hz  dpi_mode=51
+    #---> 1680x1050 60hz  dpi_mode=58
+    #---> 1920x1080 60hz  dpi_mode=82
+    #---> 1920x1200 60hz  dpi_mode=69
+    #---> 1920x1440 60hz  dpi_mode=73
+
+
+
 ### Audio Interface
 audio interface is connected to gpio 18 & 19 (PWM)
 
 see https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-zero-pwm-audio
 
+/boot/config.txt
     # Enable audio for PiZero(loads snd_bcm2835)
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
     dtparam=audio=on
@@ -56,6 +85,7 @@ see https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-
 ### SPI Interface
 GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS redirection to gpio 26 & 27
 
+/boot/onfig.txt
     # uncomment to use spi0 with cs0 & cs1 retirected on pin 26 & 27 
     dtparam=spi=on
     dtoverlay=spi0-cs,cs0_pin=26,cs1_pin=27
