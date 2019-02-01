@@ -106,3 +106,6 @@ rev1
 rev2
 - changement le l'empreinte vga
 - déplacement de j3 & j5
+
+rev3
+- ajout de GPIO25 au connecteur J4
