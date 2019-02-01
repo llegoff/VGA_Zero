@@ -46,7 +46,9 @@ here is the code of the file:
 
 
 /boot/config.txt
-
+    
+    # disable i2c, pin use by h-sync & v-sync
+    dtparam=i2c_arm=off
     dtoverlay=vga565
     dpi_output_format=0x13
     enable_dpi_lcd=1
