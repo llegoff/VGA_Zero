@@ -111,3 +111,6 @@ rev1
 rev2
 - change vga footprint
 - move j3 & j5
+
+rev3
+- add GPIO25 to J4 connector
