@@ -116,3 +116,4 @@ rev2
 
 rev3
 - add GPIO25 to J4 connector
+- add j6 DC 3.5x1.3 connector
