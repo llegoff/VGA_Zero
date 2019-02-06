@@ -15,21 +15,21 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L VGA_Zero-rescue:CONN_02X20 J2
+L Connector_Generic:Conn_02x20_Odd_Even J2
 U 1 1 597F9289
-P 3600 1950
-F 0 "J2" H 3600 3000 50  0000 C CNN
-F 1 "CONN_02X20" V 3600 1950 50  0000 C CNN
-F 2 "_LaurentPerso:RaspberryPiZeroHAT" H 3600 1000 50  0001 C CNN
-F 3 "" H 3600 1000 50  0001 C CNN
-	1    3600 1950
+P 3550 1900
+F 0 "J2" H 3550 2950 50  0000 C CNN
+F 1 "CONN_02X20" V 3550 1900 50  0000 C CNN
+F 2 "_LaurentPerso:RaspberryPiZeroHAT" H 3550 950 50  0001 C CNN
+F 3 "" H 3550 950 50  0001 C CNN
+	1    3550 1900
 	1    0    0    -1  
 $EndComp
 $Comp
-L VGA_Zero-rescue:JACK_TRS_6PINS J3
+L Connector:AudioJack3 J3
 U 1 1 597FA528
 P 5350 1700
-F 0 "J3" H 5350 2100 50  0000 C CNN
+F 0 "J3" H 5325 1925 50  0000 C CNN
 F 1 "AUDIO" H 5300 1400 50  0000 C CNN
 F 2 "_LaurentPerso:jack3.5smd" H 5450 1550 50  0001 C CNN
 F 3 "" H 5450 1550 50  0001 C CNN
@@ -515,13 +515,6 @@ F 3 "" H 6050 1400 50  0001 C CNN
 	1    6050 1400
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5750 1400 5800 1400
-Wire Wire Line
-	5750 1500 5800 1500
-Wire Wire Line
-	5800 1500 5800 1400
-Connection ~ 5800 1400
 $Comp
 L Device:CP C2
 U 1 1 5982E020
@@ -544,20 +537,6 @@ F 3 "" H 6050 1900 50  0001 C CNN
 	1    6050 1900
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5900 1700 5800 1700
-Wire Wire Line
-	5900 1900 5800 1900
-Wire Wire Line
-	5750 1800 5800 1800
-Wire Wire Line
-	5800 1800 5800 1900
-Connection ~ 5800 1900
-Wire Wire Line
-	5750 1600 5800 1600
-Wire Wire Line
-	5800 1600 5800 1700
-Connection ~ 5800 1700
 $Comp
 L Device:R R1
 U 1 1 5982E51F
@@ -701,7 +680,7 @@ Wire Wire Line
 Wire Wire Line
 	1650 3150 1650 3200
 $Comp
-L VGA_Zero-rescue:DB15_FEMALE_HighDensity J1
+L Connector:DB15_Female_HighDensity J1
 U 1 1 59848D1D
 P 1450 1350
 F 0 "J1" H 1450 2200 50  0000 C CNN
@@ -712,11 +691,11 @@ F 3 "" H 500 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L VGA_Zero-rescue:BARREL_JACK J5
+L Connector:Barrel_Jack_Switch J5
 U 1 1 5992346C
 P 5250 3100
 F 0 "J5" H 5250 3295 50  0000 C CNN
-F 1 "BARREL_JACK" H 5250 2945 50  0000 C CNN
+F 1 "BARREL_JACK" H 5250 2900 50  0000 C CNN
 F 2 "Connectors:BARREL_JACK" H 5250 3100 50  0001 C CNN
 F 3 "" H 5250 3100 50  0001 C CNN
 	1    5250 3100
@@ -799,12 +778,6 @@ Wire Wire Line
 Wire Wire Line
 	4150 2600 4150 3000
 Wire Wire Line
-	5800 1400 6050 1400
-Wire Wire Line
-	5800 1900 5750 1900
-Wire Wire Line
-	5800 1700 5750 1700
-Wire Wire Line
 	6250 1700 6350 1700
 Wire Wire Line
 	6200 2100 6250 2100
@@ -834,11 +807,11 @@ $EndComp
 Text Label 1300 2550 0    60   ~ 0
 IO25
 $Comp
-L VGA_Zero-rescue:BARREL_JACK J6
+L Connector:Barrel_Jack_Switch J6
 U 1 1 5C5A2885
 P 6450 3100
 F 0 "J6" H 6450 3295 50  0000 C CNN
-F 1 "BARREL_JACK" H 6450 2945 50  0000 C CNN
+F 1 "BARREL_JACK" H 6450 2900 50  0000 C CNN
 F 2 "_LaurentPerso:DC002_3.5x1.1" H 6450 3100 50  0001 C CNN
 F 3 "" H 6450 3100 50  0001 C CNN
 	1    6450 3100
@@ -866,4 +839,22 @@ Wire Wire Line
 Connection ~ 6825 3200
 Wire Wire Line
 	6825 3200 6825 3300
+Wire Wire Line
+	5550 1600 5625 1600
+Wire Wire Line
+	5625 1600 5625 1400
+Wire Wire Line
+	5625 1400 6050 1400
+Wire Wire Line
+	5675 1700 5675 1800
+Wire Wire Line
+	5675 1800 5550 1800
+Wire Wire Line
+	5675 1700 5900 1700
+Wire Wire Line
+	5625 1900 5625 1700
+Wire Wire Line
+	5625 1700 5550 1700
+Wire Wire Line
+	5625 1900 5900 1900
 $EndSCHEMATC
