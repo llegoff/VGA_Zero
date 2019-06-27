@@ -78,6 +78,8 @@ here is the code of the file:
 
 ### Dual Screen (VGA + HDMI)
 
+[:warning:] need rasbian buster
+
 edit file /boot/config.txt  add line:
 
     [all]
@@ -91,59 +93,57 @@ edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     # /etc/X11/xorg.conf in order to make the Xorg server pick up
     # and load xf86-video-fbturbo driver installed in the system.    
     #
-# When troubleshooting, check /var/log/Xorg.0.log for the debugging
-# output and error messages.
-#
-# Run "man fbturbo" to get additional information about the extra
-# configuration options for tuning the driver.
+    # When troubleshooting, check /var/log/Xorg.0.log for the debugging
+    # output and error messages.
+    #
+    # Run "man fbturbo" to get additional information about the extra
+    # configuration options for tuning the driver.
+    
+    #Section "Device"
+    #        Identifier      "Allwinner A10/A13 FBDEV"
+    #        Driver          "fbturbo"
+    #        Option          "fbdev" "/dev/fb0"
+    #        Option          "SwapbuffersWait" "true"
+    #EndSection
+    
+    Section "Device"
+    Identifier "Raspberry Pi HDMI"
+    Driver "fbturbo"
+    Option "fbdev" "/dev/fb0"
+    Option "ShadowFB" "off"
+    EndSection
+    
+    Section "Device"
+    Identifier "Raspberry Pi DPI"
+    Driver "fbturbo"
+    Option "fbdev" "/dev/fb1"
+    Option "ShadowFB" "off"
+    
+    Section "Monitor"
+    Identifier "HDMI"
+    EndSection
 
-#Section "Device"
-#        Identifier      "Allwinner A10/A13 FBDEV"
-#        Driver          "fbturbo"
-#        Option          "fbdev" "/dev/fb0"
-#        Option          "SwapbuffersWait" "true"
-#EndSection
-
-Section "Device"
-Identifier "Raspberry Pi HDMI"
-Driver "fbturbo"
-Option "fbdev" "/dev/fb0"
-Option "ShadowFB" "off"
-EndSection
-
-Section "Device"
-Identifier "Raspberry Pi DPI"
-Driver "fbturbo"
-Option "fbdev" "/dev/fb1"
-Option "ShadowFB" "off"
-
-Section "Monitor"
-Identifier "HDMI"
-EndSection
-
-Section "Monitor"
-Identifier "DPI"
-EndSection
-
-Section "Screen"
-Identifier "screen0"
-Device "Raspberry Pi HDMI"
-Monitor "HDMI"
-EndSection
-
-Section "Screen"
-Identifier "screen1"
-Device "Raspberry Pi DPI"
-Monitor "DPI"
-
-Section "ServerLayout"
-Identifier "default"
-Screen 0 "screen0" 0 0
-Screen 1 "screen1" RightOf "screen0"
-Option "Xinerama" "on"
-EndSection
-
-
+    Section "Monitor"
+    Identifier "DPI"
+    EndSection
+    
+    Section "Screen"
+    Identifier "screen0"
+    Device "Raspberry Pi HDMI"
+    Monitor "HDMI"
+    EndSection
+    
+    Section "Screen"
+    Identifier "screen1"
+    Device "Raspberry Pi DPI"
+    Monitor "DPI"
+    
+    Section "ServerLayout"
+    Identifier "default"
+    Screen 0 "screen0" 0 0
+    Screen 1 "screen1" RightOf "screen0"
+    Option "Xinerama" "on"
+    EndSection
 
 ### Audio Interface
 audio interface is connected to gpio 18 & 19 (PWM)
