@@ -78,9 +78,11 @@ here is the code of the file:
 
 ### Dual Screen (VGA + HDMI)
 
-[:warning:] need rasbian buster
+:warning: need rasbian buster
 
-edit file /boot/config.txt  add line:
+edit file /boot/config.txt  
+
+add line:
 
     [all]
     #dtoverlay=vc4-fkms-v3d
