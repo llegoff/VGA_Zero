@@ -78,7 +78,7 @@ here is the code of the file:
 
 ### Dual Screen (VGA + HDMI)
 
-:warning: need rasbian buster
+:warning: need raspbian buster
 
 edit file /boot/config.txt  
 
