@@ -73,7 +73,7 @@ voici le code du fichier:
     #---> 1920x1440 60hz  dpi_mode=73
 ### Double Ecran (VGA + HDMI)
 
-:warning: nécessite rasbian buster
+:warning: nécessite raspbian buster
 
 editer le fichier /boot/config.txt  
 
