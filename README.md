@@ -73,6 +73,33 @@ here is the code of the file:
     #---> 1920x1200 60hz  dpi_mode=69
     #---> 1920x1440 60hz  dpi_mode=73
 
+alternate config, no need dtbo file
+
+    # disable i2c, pin use by h-sync & v-sync
+    dtparam=i2c_arm=off
+    gpio=2-8,12-17,20-24=a2
+    dpi_output_format=0x13
+    enable_dpi_lcd=1
+    display_default_lcd=1
+    dpi_group=2
+    dpi_mode=16
+    #---------------- dpi_mode line ---------------------
+    #---> 640x480 60hz    dpi_mode=4
+    #---> 800x600 60hz    dpi_mode=9
+    #---> 1024x768 60hz   dpi_mode=16
+    #---> 1280x768 60hz   dpi_mode=23
+    #---> 1280x800 60hz   dpi_mode=28
+    #---> 1280x960 60hz   dpi_mode=32
+    #---> 1280x1024 60hz  dpi_mode=35
+    #---> 1360x768 60hz   dpi_mode=39
+    #---> 1366x768 60hz   dpi_mode=81
+    #---> 1400x1050 60hz  dpi_mode=42
+    #---> 1440x900 60hz   dpi_mode=47
+    #---> 1600x1200 60hz  dpi_mode=51
+    #---> 1680x1050 60hz  dpi_mode=58
+    #---> 1920x1080 60hz  dpi_mode=82
+    #---> 1920x1200 60hz  dpi_mode=69
+    #---> 1920x1440 60hz  dpi_mode=73
 
 ### Dual Screen (VGA + HDMI)
 
