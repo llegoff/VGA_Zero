@@ -142,6 +142,19 @@ editer le fichier /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Option "Xinerama" "on"
     EndSection
 
+### Remote Desktop MultiMonitor
+
+installation de freeRDP
+
+    sudo apt-get install freerdp2-x11
+
+lancement d'un session freeRDP
+    
+    xfreerdp /v:<nom ou IP de l'ordinateur> /u:<utilisateur> /d:<domaine> /sound:sys:alsa /multimon
+
+or
+
+    xfreerdp /v:<nom ou IP de l'ordinateur> /u:<utilisateur> /d:<domaine> /g:<nom ou IP de la passerelle RDP> /gu:<utilisateur de la passerelle> /gd:<domaine de la passerelle> /sound:sys:alsa /multimon
 
 ### Interface audio
 le son est généré en MLI (PWM) à partir des broches gpio 18 & 19
