@@ -118,6 +118,7 @@ edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Driver "fbturbo"
     Option "fbdev" "/dev/fb1"
     Option "ShadowFB" "off"
+    EndSection
     
     Section "Monitor"
     Identifier "HDMI"
@@ -137,6 +138,7 @@ edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Identifier "screen1"
     Device "Raspberry Pi DPI"
     Monitor "DPI"
+    EndSection
     
     Section "ServerLayout"
     Identifier "default"
