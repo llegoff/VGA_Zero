@@ -12,6 +12,9 @@ dtparam=i2c_arm=off
 #information https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/README.md 
 #load /boot/overlays/vga565.dtbo
 dtoverlay=vga565
+#alternate config, no need dtbo file
+#gpio=2-8,12-17,20-24=a2
+
 dpi_output_format=0x13
 enable_dpi_lcd=1
 display_default_lcd=1
