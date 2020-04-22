@@ -80,7 +80,7 @@ here is the code of the file:
 
 edit file /boot/config.txt  
 
-add line:
+at the end of the file, add line:
 
     [all]
     #dtoverlay=vc4-fkms-v3d
