@@ -146,7 +146,7 @@ edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Screen 1 "screen1" RightOf "screen0"
     Option "Xinerama" "on"
     EndSection
-###Remote Desktop MultiMonitor
+### Remote Desktop MultiMonitor
 install freeRDP
 
     sudo apt-get install freerdp2-x11
