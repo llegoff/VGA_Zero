@@ -142,7 +142,7 @@ editer le fichier /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Option "Xinerama" "on"
     EndSection
 
-### Remote Desktop MultiMonitor
+### Bureau à distance en double écrans
 
 installation de freeRDP
 
