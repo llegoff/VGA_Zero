@@ -146,6 +146,18 @@ edit file /usr/share/X11/xorg.conf.d/99-fbturbo.conf
     Screen 1 "screen1" RightOf "screen0"
     Option "Xinerama" "on"
     EndSection
+###Remote Desktop MultiMonitor
+install freeRDP
+
+    sudo apt-get install freerdp2-x11
+
+start freeRDP session
+    
+    xfreerdp /v:<computer name or IP> /u:<user> /d:<domain> /sound:sys:alsa /multimon
+
+or
+
+    xfreerdp /v:<computer name or IP> /u:<user> /d:<domain> /g:<gateway name or IP> /gu:<gateway user> /gd:<gateway domain> /sound:sys:alsa /multimon
 
 ### Audio Interface
 audio interface is connected to gpio 18 & 19 (PWM)
