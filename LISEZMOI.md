@@ -224,3 +224,5 @@ rev2
 
 rev3
 - ajout de GPIO25 au connecteur J4
+- ajout du connecteur j6 DC 3.5x1.3
+- changement de librairie Kicad v5.0.2 lib
