@@ -3,7 +3,7 @@
 # VGA_Zero
 interface VGA pour Raspberry Pi Zéro &amp; 2,3,B+
 
-achetez la rev3 sur [ebay](https://www.ebay.fr/itm/154182195021) :package:
+achetez la rev2 sur [ebay](https://www.ebay.fr/itm/154182195021) :package:
 
 ![](img/VgaZero.jpg)
 
