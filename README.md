@@ -197,6 +197,14 @@ see https://learn.adafruit.com/adding-basic-audio-ouput-to-raspberry-pi-zero/pi-
     dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
     dtparam=audio=on
 
+For Pi4 or Pi400 use audremap overlay
+
+/boot/config.txt
+
+    # Enable audio for PiZero(loads snd_bcm2835)
+    dtoverlay=audremap,pins_18_19
+    dtparam=audio=on
+
 ### SPI Interface
 GPIO 9 , 10, 11 , 25, 26, 27 can be used as SPI , whit overlay spi0-cs, with CS redirection to gpio 26 & 27
 
