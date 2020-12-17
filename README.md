@@ -101,6 +101,29 @@ alternate config, no need dtbo file
     #---> 1920x1200 60hz  dpi_mode=69
     #---> 1920x1440 60hz  dpi_mode=73
 
+
+### 15khz cathode ray screen
+
+    # disable i2c, pin use by h-sync & v-sync
+    dtparam=i2c_arm=off
+    gpio=2-8,12-17,20-24=a2
+    dpi_output_format=0x13
+    enable_dpi_lcd=1
+    display_default_lcd=1
+    dpi_group=2
+    dpi_mode=87
+    #hdmi_timings=506 1 8 48 56 240 1 3 10 6 0 0 0 60 0 9600000 1
+    #hdmi_timings=512 1 16 48 64 288 1 3 5 6 0 0 0 50 0 9600000 1
+    # Custom 15kHz mode
+    hdmi_timings=506 1 8 44 52 240 1 6 10 6 0 0 0 60 0 9600000 1
+    #hdmi_timings=320 1 17 33 34 224 1 14 8 18 0 0 0 60 0 6400000 1
+    #hdmi_timings=960 0 173 8 0 160 0 40 10 0 0 0 0 60 0 19200000 8
+    #hdmi_timings=320 1 25 30 30 240 1 9 3 10 0 0 0 60 0 6400000 1
+    #hdmi_timings=1920 1 52 208 260 240 1 6 10 6 0 0 0 60 0 38400000 1
+    
+for recalbox see https://recalbox.gitbook.io/tutorials/v/francais/video/crt/configurez-votre-ecran-cathodique-sur-le-bus-dpi-vga666-piscart-rgbpi
+
+
 ### Dual Screen (VGA + HDMI)
 
 :warning: need raspbian buster
