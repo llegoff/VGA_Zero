@@ -123,6 +123,15 @@ Pour recalbox voir https://recalbox.gitbook.io/tutorials/v/francais/video/crt/co
 
 ### Double Ecran (VGA + HDMI)
 
+sur le pi4 et pi400, la fonction double ecran est prise en charge par le driver vc4 fkms v3d
+
+    [pi4]
+    # Enable DRM VC4 V3D driver on top of the dispmanx display stack
+    dtoverlay=vc4-fkms-v3d
+    max_framebuffers=2
+    
+Pour les versions précedente:
+
 :warning: nécessite raspbian buster
 
 editer le fichier /boot/config.txt  
