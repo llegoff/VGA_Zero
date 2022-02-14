@@ -1,3 +1,6 @@
+# replace dtoverlay=vc4-kms-v3d with
+dtoverlay=vc4-fkms-v3d
+
 # Enable audio for PiZero(loads snd_bcm2835)
 #dtoverlay=pwm-2chan,pin=18,func=2,pin2=19,func2=2
 dtoverlay=audremap,pins_18_19
