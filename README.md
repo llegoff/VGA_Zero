@@ -103,6 +103,10 @@ alternate config, no need dtbo file
     #---> 1920x1200 60hz  dpi_mode=69
     #---> 1920x1440 60hz  dpi_mode=73
 
+work with fkms driver
+
+    # replace dtoverlay=vc4-kms-v3d with
+    dtoverlay=vc4-fkms-v3d
 
 ### 15khz cathode ray screen
 
