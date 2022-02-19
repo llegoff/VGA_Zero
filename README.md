@@ -5,7 +5,7 @@ VGA interface for Raspberry Pi Zéro &amp; 2,3,B+
 
 for pi400 see https://github.com/llegoff/Pi400VGA
 
-buy rev3 on [ebay](https://www.ebay.fr/itm/154182195021) :package:
+buy rev3 on [ebay](https://www.ebay.fr/itm/154857982971) :package:
 
 ![](img/VgaZero.jpg)
 
