@@ -100,7 +100,7 @@ configuration alternative, ne necessite pas de fichier overlay .dtbo
     #---> 1920x1200 60hz  dpi_mode=69
     #---> 1920x1440 60hz  dpi_mode=73    
 
-Configuration working with vc4-kms-v3d
+Configuration fonctionnant avec le pilote vc4-kms-v3d
 
     dtoverlay=vc4-kms-dpi-generic,rgb565-padhi
     dtparam=hactive=768,hfp=24,hsync=72,hbp=88
