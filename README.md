@@ -77,6 +77,8 @@ here is the code of the file:
 
 alternate config, no need dtbo file
 
+    # replace dtoverlay=vc4-kms-v3d with
+    dtoverlay=vc4-fkms-v3d
     # disable i2c, pin use by h-sync & v-sync
     dtparam=i2c_arm=off
     gpio=2-8,12-17,20-24=a2
@@ -103,10 +105,31 @@ alternate config, no need dtbo file
     #---> 1920x1200 60hz  dpi_mode=69
     #---> 1920x1440 60hz  dpi_mode=73
 
-work with fkms driver
+Configuration working with vc4-kms-v3d
 
-    # replace dtoverlay=vc4-kms-v3d with
-    dtoverlay=vc4-fkms-v3d
+    dtoverlay=vc4-kms-dpi-generic,rgb565-padhi
+    dtparam=hactive=768,hfp=24,hsync=72,hbp=88
+    dtparam=vactive=576,vfp=6,vsync=5,vbp=38
+    dtparam=clock-frequency=14875000
+    #   Resolution@freq  hactive hfp hsync  hbp vactive vfp vsync vbp  clock-frequency
+    #VGA   640x480  @60   640     16   96    48   480    10   2    33    25175000
+    #SVGA  800x600  @60   800     40  128    88   600     1   4    23    40000000
+    #XGA  1024x768  @60  1024     24  136   160   768     3   6    29    65000000
+    #VESA 1368x768  @60  1368     72  144   216   768     1   3    23    85860000
+    #VESA 1280x800  @60  1280     64  136   200   800     1   3    24    83460000
+    #VESA 1280x1024 @60  1280     48  112   248  1024     1   3    38   108000000
+    #VESA 1400x1050 @60  1400     88  152   240  1050     1   3    33   122660000
+    #VESA 1600x1200 @60  1600     64  192   304  1200     1   3    46   162000000
+    #--- TV -----
+    #244p (NTSC res)@60   320      4   30    46   240     4   5    14     6400000
+    #288p (PAL res) @50   384     16   32    40   288     3   2    19     7363200
+    #480i (NTSC res)@60   640     24   64   104   480     3   6    34    13054080
+    #576i (PAL res) @50   768     24   72    88   576     6   5    38    14875000
+    #480p           @60   640     24   96    48   480    11   2    32    25452000
+    #720p           @60  1280    110   40   220   720     5   5    20    74250000
+    #1080p          @60  1920     88   44   148  1080     4   5    36   148500000
+    #more timming on http://tinyvga.com/vga-timing
+
 
 ### 15khz cathode ray screen
 
