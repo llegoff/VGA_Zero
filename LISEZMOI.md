@@ -103,9 +103,9 @@ configuration alternative, ne necessite pas de fichier overlay .dtbo
 Configuration fonctionnant avec le pilote vc4-kms-v3d
 
     dtoverlay=vc4-kms-dpi-generic,rgb565-padhi
-    dtparam=hactive=768,hfp=24,hsync=72,hbp=88
-    dtparam=vactive=576,vfp=6,vsync=5,vbp=38
-    dtparam=clock-frequency=14875000
+    dtparam=hactive=800,hfp=40,hsync=128,hbp=88
+    dtparam=vactive=600,vfp=1,vsync=4,vbp=23
+    dtparam=clock-frequency=40000000
     #   Resolution@freq  hactive hfp hsync  hbp vactive vfp vsync vbp  clock-frequency
     #VGA   640x480  @60   640     16   96    48   480    10   2    33    25175000
     #SVGA  800x600  @60   800     40  128    88   600     1   4    23    40000000
